@@ -1,0 +1,27 @@
+Regular adventures list
+---------------
+Doppelganger
+Dire Wolf
+Goblin
+Air Elemental
+Gelatinous Cube
+Giant Centipede
+Gnoll
+Griffon
+Hell Hound
+Iron Golem
+Kobold
+Elder Lich
+Manticore
+Pseudodragon
+Skeleton
+Werewolf
+Weretiger
+Owlbear
+
+
+Dragon list
+------------
+Adult, Young
+Red, Black, Copper, Brass, Bronze, White, Gold, Green, Silver, Blue
+-Wyrmling
