@@ -15,7 +15,7 @@
         <p id="start">You are a scholar about to embark on a journey into the Realms.</p>
         <p id="start2">But before you go, you should know about the perils you may face.</p>
     </header>
-    <button id="button1" onclick=chooseWord()>Begin your studies</button>
+    <button id="button1" onclick=chooseWord();evaporate();matchImages()>Begin your studies</button>
     <div>
         <main id=box>Current guesses
             <p>you guessed <br>
@@ -26,7 +26,7 @@
 
         </main>
         <main id=box2>Chosen Word
-            
+
             <p>
                 <span id=underline1>_</span>
                 <span id=underline2>_</span>
@@ -48,8 +48,10 @@
         </main>
     </div>
     <br>
+    <button id="button2" onclick=showHint()>Hint</button>
+    <img id="wordImage" src="#" />
     <footer>Copyright Info</footer>
-<script src="logic.js"></script>
+    <script src="logic.js"></script>
 </body>
 
 </html>
