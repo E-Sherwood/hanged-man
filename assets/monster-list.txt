@@ -5,7 +5,7 @@ Dire Wolf
 Goblin
 Air Elemental
 Gelatinous Cube
-Giant Centipede
+Giant Spider
 Gnoll
 Griffon
 Hell Hound
@@ -18,7 +18,8 @@ Skeleton
 Werewolf
 Weretiger
 Owlbear
-
+Necromancer
+Mind Flayer
 
 Dragon list
 ------------

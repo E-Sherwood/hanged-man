@@ -1,0 +1,23 @@
+needed functionality:
+
+~user starts the game:
+-a word is selected from array of solutions
+-starting text is hidden
+
+~user inputs a guess letter
+-letter value is stored
+-solution word is checked for input letter
+-if letter is in word, letter is revealed on word
+-if letter is not in word, letter is stored as guess
+    ..letter cannot be guessed again
+    ..user does not lose from repeatedly guessing same letter
+
+~user correctly guesses all letters
+-full word is revealed
+-display a "good job/you win" message
+-display picture of solution word
+
+~user fails to correctly guess all letters
+-display a "bad job/you lose" message
+-display silhouette version picture of solution word
+-"try again" and "try new word" options appear

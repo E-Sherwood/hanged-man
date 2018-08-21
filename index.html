@@ -1,18 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href=assets\style.css rel="stylesheet">
+    <link href=C:\Users\esher\hanged-man\hanged-man\assets\css\style.css rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
     <script src="logic.js"></script>
     <title>D&D Hanged-Man</title>
 </head>
+
 <body>
-    <p>You are a scholar about to embark on a journey into the Realms.</p>
-    <p>But before you go, you should know about the perils you may face.</p>
-    <button>Begin your studies</button>
+    <header>
+        <p id="start">You are a scholar about to embark on a journey into the Realms.</p>
+        <p id="start2">But before you go, you should know about the perils you may face.</p>
+    </header>
+    <button id="button1" onclick=chooseWord()>Begin your studies</button>
+    <div>
+        <main id=box>Current guesses
+            <p>you guessed <br>
+                <span id="user-text">..</span></p>
+            <!-- <p id="user-text"></p>
+        <p id="user-text"></p>
+        <p id="user-text"></p> -->
+
+        </main>
+        <main id=box2>Chosen Word
+            
+            <p>try to guess 
+                <span id="chosenWord">..</span>
+            </p>
+        </main>
+    </div>
     <br>
-    
+    <footer>Copyright Info</footer>
+    <script>
+        var monstersArray = [
+            "Doppelganger",
+            "Dire Wolf",
+            "Goblin",
+            "Air Elemental",
+            "Gelatinous Cube",
+            "Giant Spider",
+            "Gnoll",
+            "Mind Flayer",
+            "Griffon",
+            "Hell Hound",
+            "Iron Golem",
+            "Kobold",
+            "Elder Lich",
+            "Manticore",
+            "Necromancer",
+            "Pseudodragon",
+            "Skeleton",
+            "Werewolf",
+            "Weretiger",
+            "Owlbear"];
+
+        var userText = document.getElementById("user-text");
+
+        document.onkeyup = function (event) {
+            userText.textContent = event.key;
+        };
+        var rand = document.getElementById("chosenWord");
+        function chooseWord() {
+            rand = monstersArray[Math.floor(Math.random() * monstersArray.length)];
+            document.getElementById("chosenWord").innerHTML = rand;
+
+        }
+    </script>
 </body>
+
 </html>
