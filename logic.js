@@ -55,12 +55,8 @@ function chooseWord() {
     document.getElementById("underline15").innerHTML = rand[14];
     //i'm not sure what goes here. some kind of loop?    
 
-
 };
-function showHint() {
-    document.getElementById("wordImage").style.visibility = "visible";
 
-}
 function matchImages() {
     if (rand === "Werewolf") {
         document.getElementById("wordImage").src = "assets/images/Werewolf-5e - Copy.png";
@@ -123,3 +119,12 @@ function matchImages() {
         document.getElementById("wordImage").src = "assets/images/Doppelganger-5e - Copy.jpg";
     }
 };
+function toggleHint() {
+    var x = document.getElementById("wordImage");
+    if (x.style.visibility === "hidden") {
+        x.style.visibility = "visible";
+    } else {
+        x.style.visibility = "hidden";
+    }
+}
+//takes two clicks to show at first, but it works
