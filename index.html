@@ -15,43 +15,48 @@
         <p id="start">You are a scholar about to embark on a journey into the Realms.</p>
         <p id="start2">But before you go, you should know about the perils you may face.</p>
     </header>
-    <button id="button1" onclick=chooseWord();evaporate();matchImages()>Begin your studies</button>
+    <button id="button1" onclick=chooseWord();setWord();evaporate();matchImages();//addGuesses();check();>Begin your studies</button>
     <div>
-        <main id=box>Current guesses
+        <main id="box">Current guesses
             <p>you guessed <br>
                 <span id="user-text">..</span></p>
-            <!-- <p id="user-text"></p>
-        <p id="user-text"></p>
-        <p id="user-text"></p> -->
-
+                <br>
+            
+            <div>
+                 <div id="guesses">
+                <span id="guess"></span> 
+                <span id="guess"></span>
+                <span id="guess"></span>
+                <span id="guess"></span>
+                <span id="guess"></span>
+                
+                <span id="guess"></span>
+                <span id="guess"></span>
+                <span id="guess"></span>
+                <span id="guess"></span>
+                <span id="guess"></span>
+                <span id="guess"></span>
+                <span id="guess"></span>
+                </div>
+            </div>
         </main>
         <main id=box2>Chosen Word
 
             <p>
-                <span id=underline1>_</span>
-                <span id=underline2>_</span>
-                <span id=underline3>_</span>
-                <span id=underline4>_</span>
-                <span id=underline5>_</span>
-                <span id=underline6>_</span>
-                <span id=underline7>_</span>
-                <span id=underline8>_</span>
-                <span id=underline9>_</span>
-                <span id=underline10>_</span>
-                <span id=underline11>_</span>
-                <span id=underline12>_</span>
-                <span id=underline13>_</span>
-                <span id=underline14>_</span>
-                <span id=underline15>_</span>
-                <span id="chosenWord">..</span>
+                <span id="answerSpot">-</span>
+                <br>
+                
             </p>
         </main>
     </div>
     <br>
     <button id="button2" onclick=toggleHint()>Toggle Hint</button>
     <img id="wordImage" src="#" />
-    <footer>Copyright Info</footer>
-    <script src="logic.js"></script>
+    <footer>
+        <p>Names and images property of Wizards of the Coast</p>
+        <a href=http://company.wizards.com>WotC official website</a>
+    </footer>
+    <script src="logic.js"></script>/
 </body>
 
 </html>
