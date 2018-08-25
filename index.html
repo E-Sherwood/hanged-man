@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href=C:\Users\esher\hanged-man\hanged-man\assets\css\style.css rel="stylesheet">
+    <link href=assets\css\style.css rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
     <title>D&D Hanged-Man</title>
 </head>
@@ -15,28 +15,17 @@
         <p id="start">You are a scholar about to embark on a journey into the Realms.</p>
         <p id="start2">But before you go, you should know about the perils you may face.</p>
     </header>
-    <button id="button1" onclick=chooseWord();setWord();evaporate();matchImages();//addGuesses();check();>Begin your studies</button>
+    <button id="button1" onclick=chooseWord();setWord();evaporate();matchImages();checkGuess();>Begin your studies</button>
     <div>
         <main id="box">Current guesses
             <p>you guessed <br>
-                <span id="user-text">..</span></p>
+                </p>
+                <p id="O"></p>
                 <br>
             
             <div>
                  <div id="guesses">
-                <span id="guess"></span> 
-                <span id="guess"></span>
-                <span id="guess"></span>
-                <span id="guess"></span>
-                <span id="guess"></span>
                 
-                <span id="guess"></span>
-                <span id="guess"></span>
-                <span id="guess"></span>
-                <span id="guess"></span>
-                <span id="guess"></span>
-                <span id="guess"></span>
-                <span id="guess"></span>
                 </div>
             </div>
         </main>
@@ -56,7 +45,7 @@
         <p>Names and images property of Wizards of the Coast</p>
         <a href=http://company.wizards.com>WotC official website</a>
     </footer>
-    <script src="logic.js"></script>/
+    <script src="assets/logic.js"></script>/
 </body>
 
 </html>
